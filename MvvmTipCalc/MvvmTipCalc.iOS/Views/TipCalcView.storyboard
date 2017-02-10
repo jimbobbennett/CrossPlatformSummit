@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TipCalc-->
+        <scene sceneID="4">
+            <objects>
+                <viewController storyboardIdentifier="TipCalcView" title="TipCalc" id="5" customClass="TipCalcView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2"/>
+                        <viewControllerLayoutGuide type="bottom" id="3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="15">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter bill amount" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="16" misplaced="YES">
+                                <rect key="frame" x="16" y="46" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17" misplaced="YES">
+                                <rect key="frame" x="155.5" y="106" width="64" height="30"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18" misplaced="YES">
+                                <rect key="frame" x="0.0" y="166" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="16" firstAttribute="centerX" secondItem="15" secondAttribute="centerX" id="19"/>
+                            <constraint firstItem="17" firstAttribute="centerX" secondItem="15" secondAttribute="centerX" id="20"/>
+                            <constraint firstAttribute="centerX" secondItem="18" secondAttribute="centerX" id="21"/>
+                            <constraint firstItem="16" firstAttribute="top" secondItem="2" secondAttribute="bottom" constant="26" id="22"/>
+                            <constraint firstItem="16" firstAttribute="leading" secondItem="15" secondAttribute="leadingMargin" id="23"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="16" secondAttribute="trailing" id="24"/>
+                            <constraint firstItem="17" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="30" id="25"/>
+                            <constraint firstItem="18" firstAttribute="top" secondItem="17" secondAttribute="bottom" constant="30" id="26"/>
+                            <constraint firstItem="18" firstAttribute="leading" secondItem="15" secondAttribute="leading" id="27"/>
+                            <constraint firstAttribute="trailing" secondItem="18" secondAttribute="trailing" id="28"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BillAmount" destination="16" id="name-outlet-16"/>
+                        <outlet property="Calculate" destination="17" id="name-outlet-17"/>
+                        <outlet property="TipAmount" destination="18" id="name-outlet-18"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="100"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+</document>

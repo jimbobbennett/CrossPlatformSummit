@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_layout">
+        <include
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout">
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill_amount"
+            android:hint="Enter bill amount"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+        <Button
+            android:text="Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculate"
+            style="@android:style/Widget.Material.Light.Button.Borderless" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tip_amount"
+            android:gravity="center" />
+    </LinearLayout>
+</RelativeLayout>
