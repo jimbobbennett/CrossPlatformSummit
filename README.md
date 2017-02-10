@@ -1,2 +1,2 @@
-# VietnamCrossPlatformSummit
-Sample apps for the 2017 Vietnam Cross-Platform dev summit
+# CrossPlatformSummit
+Sample apps for the 2017 Cross-Platform dev summit
